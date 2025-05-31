@@ -6,7 +6,7 @@ from datasets import Dataset
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
 # Load and preprocess the data
-df = pd.read_csv('D:\fake_news_detection\data\processed_data.csv')
+df = pd.read_csv('D:/fake_news_detection/data/processed_data.csv')
 df = df[['processed_text', 'label']]  # Use only the necessary columns
 df = df.dropna()  # Drop missing values if any
 
