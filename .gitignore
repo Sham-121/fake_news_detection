@@ -30,3 +30,45 @@
 *.exe
 *.out
 *.app
+
+# Ignore data folder
+data/
+
+# Ignore Python virtual environment
+.venv/
+
+# Ignore VS Code workspace settings
+.vscode/
+
+# C++ build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# CMake build folders
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Build directory
+build/
+dist/
+
+# Ignore temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Ignore generated files
+*.dSYM/
+*.ipch/
+*.pch
+*.tlog/
+*.vcxproj.user
