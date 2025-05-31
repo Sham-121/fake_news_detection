@@ -207,7 +207,7 @@ def main(true_path=r'D:\fake_news_detection\data\True.csv', false_path=r'D:\fake
         return None, None, None, None
 
 # Run the preprocessing
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Use the provided CSV file paths
     true_csv_path = r'D:\fake_news_detection\data\True.csv'
     false_csv_path = r'D:\fake_news_detection\data\False.csv'
