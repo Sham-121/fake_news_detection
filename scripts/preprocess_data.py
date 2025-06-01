@@ -15,8 +15,8 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Step 1: Load the datasets
-def load_datasets(true_path='D:\fake_news_detection\data\True.csv', false_path=
-'D:\fake_news_detection\data\False.csv'):
+def load_datasets(true_path='D:/projects/ongoing-projs/fake_news_detection/data/True.csv', false_path=
+'D:/projects/ongoing-projs/fake_news_detection/data/balanced_fake_dataset.csv'):
     """
     Load true and false CSV files and assign labels.
     True news: label = 1, False news: label = 0
@@ -160,7 +160,7 @@ def vectorize_text(df, max_features=3000):
         return None, None, None
 
 # Main function to run preprocessing
-def main(true_path=r'D:\fake_news_detection\data\True.csv', false_path=r'D:\fake_news_detection\data\False.csv', output_path=r'D:\fake_news_detection\processed_data.csv'):
+def main(true_path='D:/projects/ongoing-projs/fake_news_detection/data/True.csv', false_path=r'D:\fake_news_detection\data\False.csv', output_path=r'D:\fake_news_detection\processed_data.csv'):
     """
     Main function to preprocess the fake news data.
     """
@@ -209,9 +209,9 @@ def main(true_path=r'D:\fake_news_detection\data\True.csv', false_path=r'D:\fake
 # Run the preprocessing
 if __name__ == "__main__":
     # Use the provided CSV file paths
-    true_csv_path = r'D:\fake_news_detection\data\True.csv'
-    false_csv_path = r'D:\fake_news_detection\data\False.csv'
-    output_csv_path = r'D:\fake_news_detection\processed_data.csv'
+    true_csv_path = 'D:/projects/ongoing-projs/fake_news_detection/data/True.csv'
+    false_csv_path = 'D:/projects/ongoing-projs/fake_news_detection/data/balanced_fake_dataset.csv'
+    output_csv_path = 'D:/projects/ongoing-projs/fake_news_detection/data/processed_data.csv'
 
     # Check if files exist before running
     print(f"Checking paths: True.csv={os.path.exists(true_csv_path)}, False.csv={os.path.exists(false_csv_path)}")
