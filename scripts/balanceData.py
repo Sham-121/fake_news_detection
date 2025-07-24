@@ -1,18 +1,11 @@
 import pandas as pd
 
-true_df = pd.read_csv('News _dataset\True.csv')
-fake_df = pd.read_csv('balancedFake.csv')
+df = pd.read_csv('News _dataset\Fake.csv')
 
-#1 for TRUE and 0 for FALSE
-true_df['label'] = 1
-fake_df['label'] = 0
+n = 2000
 
-#merging data
-combined_df = pd.concat([fake_df, true_df], ignore_index=True)
+df.drop(df.tail(n).index,
+        inplace = True)
 
-#shuffling data
-shuffled_df = combined_df.sample(frac=1, random_state=42)
-shuffled_df = shuffled_df.reset_index(drop=True)
+df.to_csv('balancedFake.csv')
 
-#converting to csv
-shuffled_df.to_csv('labeled_dataset.csv', index=False)
