@@ -1,4 +1,10 @@
+# Ignore dataset and virtual env
 News_dataset/
+.venv/
+
+# Ignore VS Code config
+.vscode/
+
+#files
 balancedFake.csv
 labeled_dataset.csv
-.venv/
