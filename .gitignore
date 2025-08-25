@@ -8,3 +8,7 @@ News_dataset/
 #files
 balancedFake.csv
 labeled_dataset.csv
+X_test.csv
+X_train.csv
+y_test.csv
+y_train.csv
