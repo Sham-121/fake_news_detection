@@ -1,5 +1,5 @@
 # fake_news_detection
-Machine learning model to detect fake news
+Machine learning model to detect fake news, using fine-tuned bert
 
 
 balanceData.py --> Script to balance the datasets to get equal results
